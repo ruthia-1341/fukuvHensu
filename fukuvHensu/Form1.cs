@@ -28,6 +28,37 @@ namespace fukuvHensu
         {
             label1.Left += x;
             label1.Top += y;
+
+            if (label1.Left < 0||label1.Left>=ClientSize.Width)
+            {
+                x = -x*2;
+
+                if (label1.Text == "→")
+                {
+                    label1.Text = ("←");
+                }
+                else if (label1.Text == "←")
+                {
+                    label1.Text = ("→");
+                }
+                if (y > 10) { x = 5; }
+            }
+
+            if (label1.Top < 0 || label1.Top >= ClientSize.Height)
+            {
+                    y = -y * 2;
+                if (label1.Text == "↑")
+                {
+                    label1.Text = ("↓");
+                }
+                else if (label1.Text == "↓")
+                {
+                    label1.Text = ("↑");
+                }
+                if(y>10){ y = 5; }
+            }
+
+            //string t = label1, Text;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -81,6 +112,8 @@ namespace fukuvHensu
             if (x < 0)
             {
                 label1.Text = ("←");
+            }else if (x == 0){
+
             }
             else
             {
@@ -95,10 +128,20 @@ namespace fukuvHensu
             {
                 label1.Text = ("↑");
             }
+            else if (y == 0)
+            {
+
+            }
             else
             {
                 label1.Text = ("↓");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("幅" + ClientSize.Width);
+            MessageBox.Show("高さ" + ClientSize.Height);
         }
 
         private void button1_Click(object sender, EventArgs e)
