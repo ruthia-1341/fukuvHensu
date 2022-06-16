@@ -13,6 +13,7 @@ namespace fukuvHensu
     public partial class Form1 : Form
     {
         int x, y;
+
         public Form1()
         {
             InitializeComponent();
@@ -72,6 +73,32 @@ namespace fukuvHensu
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            x = -x;
+            if (x < 0)
+            {
+                label1.Text = ("←");
+            }
+            else
+            {
+                label1.Text = ("→");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            y = -y;
+            if (y < 0)
+            {
+                label1.Text = ("↑");
+            }
+            else
+            {
+                label1.Text = ("↓");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
