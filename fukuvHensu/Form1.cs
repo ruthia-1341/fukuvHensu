@@ -20,13 +20,13 @@ namespace fukuvHensu
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            textBox2.Visible = false;
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Left += (int.Parse(textBox1.Text));
-            label1.Top += (int.Parse(textBox2.Text));
+            label1.Left += x;
+            label1.Top += y;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -47,38 +47,37 @@ namespace fukuvHensu
 
         private void button2_Click(object sender, EventArgs e)
         {
-            y =+(int.Parse(textBox1.Text));
-            textBox2.Text = "0";
-            textBox1.Text = "5";
+            
+            y = 0;
+            x = 5;
             label1.Text = ("→");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            x =-(int.Parse(textBox2.Text));
-            textBox2.Text = "5";
-            textBox1.Text = "0";
+            
+            y = 5;
+            x = 0;
             label1.Text = ("↓");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            y =-(int.Parse(textBox1.Text));
-            textBox2.Text = "0";
-            textBox1.Text = "-5";
+            
+            y = 0;
+            x = -5;
             label1.Text = ("←");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Visible = false;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            x =+(int.Parse(textBox2.Text));
-            textBox2.Text = "-5";
-            textBox1.Text = "0";
+            y = -5;
+            x = 0;
             label1.Text = ("↑");
         }
     }
