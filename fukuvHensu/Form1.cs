@@ -50,6 +50,7 @@ namespace fukuvHensu
             y =+(int.Parse(textBox1.Text));
             textBox2.Text = "0";
             textBox1.Text = "5";
+            label1.Text = ("→");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -57,6 +58,7 @@ namespace fukuvHensu
             x =-(int.Parse(textBox2.Text));
             textBox2.Text = "5";
             textBox1.Text = "0";
+            label1.Text = ("↓");
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -64,6 +66,7 @@ namespace fukuvHensu
             y =-(int.Parse(textBox1.Text));
             textBox2.Text = "0";
             textBox1.Text = "-5";
+            label1.Text = ("←");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -76,6 +79,7 @@ namespace fukuvHensu
             x =+(int.Parse(textBox2.Text));
             textBox2.Text = "-5";
             textBox1.Text = "0";
+            label1.Text = ("↑");
         }
     }
 }
