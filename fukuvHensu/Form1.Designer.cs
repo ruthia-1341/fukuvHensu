@@ -37,7 +37,6 @@ namespace fukuvHensu
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -58,6 +57,7 @@ namespace fukuvHensu
             this.textBox1.Size = new System.Drawing.Size(49, 23);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "0";
+            this.textBox1.Visible = false;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
@@ -67,6 +67,7 @@ namespace fukuvHensu
             this.textBox2.Size = new System.Drawing.Size(49, 23);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "0";
+            this.textBox2.Visible = false;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
@@ -109,15 +110,6 @@ namespace fukuvHensu
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(716, 226);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(8, 8);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -128,7 +120,6 @@ namespace fukuvHensu
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -152,7 +143,6 @@ namespace fukuvHensu
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Timer timer1;
     }
 }
