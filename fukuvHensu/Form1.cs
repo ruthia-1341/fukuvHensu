@@ -20,7 +20,7 @@ namespace fukuvHensu
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            textBox2.Visible = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -53,6 +53,11 @@ namespace fukuvHensu
             y =-(int.Parse(textBox1.Text));
             textBox2.Text = "0";
             textBox1.Text = "-5";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
